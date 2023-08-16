@@ -141,7 +141,14 @@
             console.log(i + " * " + j + " = " + (j*i));
         }
     }
-
+    
+    //Task 20
+    var randomNum = Math.floor(Math.random()*100);
+    var userNum = +prompt("Guess a number between 0 to 99: ");
+    while (userNum != randomNum){
+        userNum = +prompt("Wrong! Try again.")
+    }
+    alert("Amazing! You got the right number! ");
     
 
 
