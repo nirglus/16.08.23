@@ -120,6 +120,34 @@
                 i++;
             }
         }
+
+        //Task 13
+        var max = Number.MIN_SAFE_INTEGER;
+        var min = Number.MAX_SAFE_INTEGER;
+        var i = 0;
+        while(i < 5){
+            var num = +prompt("Enter a number: ");
+            if(num > max){
+                max = num;
+            } else if (num < min){
+                min = num;
+            }
+            i++;
+        }
+        console.log("Min: " + min +" Max: " + max);
+
+        //Or another solution with array
+        var arr = [];
+        var i = 0;
+        while(i < 5){
+            var num = +prompt("Enter a number: ");
+            arr.push(num);
+            i++;
+        }
+        var max = Math.max(...arr);
+        var min = Math.min(...arr);
+        console.log("Min: " + min +" Max: " + max);
+
     </script>
     
 </body>
