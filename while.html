@@ -127,10 +127,10 @@
         var i = 0;
         while(i < 5){
             var num = +prompt("Enter a number: ");
-            if(num > max){
-                max = num;
-            } else if (num < min){
+            if(num < min){
                 min = num;
+            } else if (num > max){
+                max = num;
             }
             i++;
         }
