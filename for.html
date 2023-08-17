@@ -66,18 +66,14 @@
         console.log(factorial);
 
        //Task 10
-    //    var text = prompt("Enter a text: ");
-    //    var s = text.charAt(0);
-    //    var t = text.charAt(1);
-    //    var o = text.charAt(2);
-    //    var p = text.charAt(3);
-    //    for (var i = 0; i < text.length; i++){
-    //     if(text.length == 4){
-    //         if(s != "S" && t != "T" && o != "O" && p != "P"{
-    //             console.log(text);
-    //         }
-    //     }
-    //    }
+       var text = prompt("Enter a text: ");
+       for (var i = 0; i < Number.MAX_SAFE_INTEGER; i++){
+        if(text == "STOP"){
+            break;
+        } else {
+            text = prompt("Type STOP to stop.");
+        }
+       }
 
     //Task 11
     for(var i = 0; i < 10; i++){
